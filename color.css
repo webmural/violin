@@ -1,0 +1,20 @@
+::selection {
+  background: #111;
+  color: violet;
+}
+
+:root {
+  color: #111;
+  background: violet;
+}
+
+:any-link {
+  color: #111;
+}
+
+:focus {
+  text-shadow:
+    -5px 0 0 blueviolet,
+    3px 3px 0 blueviolet,
+    3px -3px 0 blueviolet;
+}
