@@ -2,6 +2,6 @@
   <title>viola</title>
   <circle fill="darkviolet" cx="50%" cy="50%" r="40%" />
   <circle fill="blueviolet" cx="50%" cy="50%" r="25%" />
-  <circle fill="palevioletred" cx="50%" cy="50%" r="15%" />
-  <circle fill="mediumvioletred" cx="50%" cy="50%" r="5%" />
+  <circle fill="gold" cx="50%" cy="50%" r="15%" />
+  <circle fill="lemonchiffon" cx="50%" cy="50%" r="5%" />
 </svg>

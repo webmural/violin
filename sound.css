@@ -1,0 +1,84 @@
+html {
+  font-size: calc(1ex + 5vmax);
+}
+
+body {
+  display: flex;
+  flex-flow: column;
+  margin: auto;
+  overflow: anywhere;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+}
+
+nav {
+  box-sizing: border-box;
+  contain: layout;
+  min-height: 100vh;
+}
+
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: circle;
+  transform: rotate(0deg);
+  transition: transform 300ms ease;
+}
+
+@media (orientation: landscape) {
+  ol {
+    transform: rotate(90deg);
+  }
+}
+
+li {
+  margin: auto;
+  margin-inline-start: 0;
+  padding: 0;
+}
+
+:focus {
+  cursor: crosshair;
+  outline: thick dotted;
+  list-style: disc;
+}
+
+:target {
+  list-style: tibetan;
+}
+
+:focus-within {
+  outline: thick groove;
+}
+
+.toast {
+  display: flex;
+  transform: none;
+  flex-flow: row-reverse;
+}
+
+sup {
+  all: unset;
+  font: 300 1em cursive;
+  padding: 5pt;
+}
+
+small {
+  font: 500 1.6em serif;
+  padding: 5pt;
+}
+
+strong {
+  font: 600 2.6em fantasy;
+  padding: 5pt;
+}
+
+sub {
+  all: unset;
+  font: 900 3.6em monospace;
+  padding: 5pt;
+}
