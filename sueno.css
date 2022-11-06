@@ -33,5 +33,12 @@ li:target {
 }
 
 .glowstick {
-  background-image: linear-gradient(.75turn, lemonchiffon, gold, violet, blueviolet, darkviolet);
+  --bow: .75turn;
+  background-image: linear-gradient(var(--bow), lemonchiffon, gold, violet, blueviolet, darkviolet);
+}
+
+@media (orientation: portrait) {
+  .bow {
+    --bow: .5turn;
+  }
 }
