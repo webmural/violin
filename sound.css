@@ -1,5 +1,5 @@
 html {
-  font-size: calc(1ex + 5vmax);
+  font-size: max(1ex, 7vmax);
 }
 
 body {
@@ -16,23 +16,40 @@ main {
 }
 
 nav {
+  display: block;
   box-sizing: border-box;
   contain: layout;
   min-height: 100vh;
 }
 
 ol {
+  contain: layout;
   margin: 0;
   padding: 0;
-  list-style: circle;
-  transform: rotate(0deg);
-  transition: transform 300ms ease;
+  list-style: circle inside;
+}
+
+.bow {
+  margin: auto;
+  box-sizing: border-box;
+  padding: 3vmax;
+  min-width: 100vw;
+  line-height: 1.6;
+}
+
+li {
+  padding: 0;
+  margin: 0;
 }
 
 @media (orientation: landscape) {
-  ol {
-    transform: rotate(90deg);
+  .bow {
+    writing-mode: vertical-rl;
   }
+}
+
+::marker {
+  font-size: 2em;
 }
 
 li {
